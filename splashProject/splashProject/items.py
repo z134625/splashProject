@@ -8,5 +8,8 @@ import scrapy
 
 class SplashprojectItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    author = scrapy.Field()
+    time = scrapy.Field()
+    Forward = scrapy.Field()
+    comment = scrapy.Field()
+    fabulous = scrapy.Field()
