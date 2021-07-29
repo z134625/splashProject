@@ -13,3 +13,4 @@ class SplashprojectItem(scrapy.Item):
     Forward = scrapy.Field()
     comment = scrapy.Field()
     fabulous = scrapy.Field()
+    writing = scrapy.Field()
