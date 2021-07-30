@@ -34,13 +34,19 @@ ROBOTSTXT_OBEY = False
 
 # Disable Telnet Console (enabled by default)
 # TELNETCONSOLE_ENABLED = False
-
+COOKIES_ENABLED = False
 # Override the default request headers:
 DEFAULT_REQUEST_HEADERS = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     'Accept-Language': 'en',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                   'Chrome/92.0.4515.107 Safari/537.36 Edg/92.0.902.55',
+    'Cookie': 'SUBP=0033WrSXqPxfM72-Ws9jqgMF55529P9D9W5DedyT-jraP93.SCURlF4u; '
+              'SINAGLOBAL=9827828826915.34.1627568438386; '
+              'cross_origin_proto=SSL; login_sid_t=c3e234f73b549c63c57e72bf397fb26a; _s_tentry=-; '
+              'Apache=4236736426173.775.1627606777265; '
+              'ULV=1627606777274:2:2:2:4236736426173.775.1627606777265:1627568438391; '
+              'SUB=_2AkMWX91Qf8NxqwJRmf8SyW_gao9-wwzEieKgAyyLJRMxHRl-yj9jqhcStRB6Pd_zvzacQmAliPiVkludM4ydiWHfjzQ0 ',
 }
 
 # Enable or disable spider middlewares
@@ -67,6 +73,7 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'splashProject.pipelines.SplashprojectPipeline': 300,
+    'splashProject.pipelines.MongdbPipeline': 301,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -91,3 +98,5 @@ ITEM_PIPELINES = {
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 SPLASH_URL = 'http://localhost:8050/'
+MONGODB_URL = 'mongodb://localhost:27017'
+MONGODB_NAME = 'spider_weibo'
