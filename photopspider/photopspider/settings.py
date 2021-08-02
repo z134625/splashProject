@@ -65,9 +65,9 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'photopspider.pipelines.PhotopspiderPipeline': 300,
-   'photopspider.pipelines.MongodbPipeline': 303,
-   'photopspider.pipelines.PhotospiderPipeline': 306,
+   'photopspider.pipelines.PhotoimagePipeline': 300,
+   # 'photopspider.pipelines.MongodbPipeline': 303,
+   'photopspider.pipelines.PhotospiderPipeline': 301,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -92,5 +92,5 @@ ITEM_PIPELINES = {
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 MONGODB_URL = 'mongodb://localhost:27017'
 MONGDB_NAME = '4Kgirl'
-IMAGE_PATH = 'D:/4k'
+IMAGES_STORE = 'D:\\spider_4k'
 

@@ -11,9 +11,9 @@ from scrapy.exceptions import DropItem
 from pymongo import MongoClient
 from scrapy import Item
 from scrapy.pipelines.images import ImagesPipeline
-from .settings import IMAGE_PATH
+from .settings import IMAGES_STORE
 
-class PhotopspiderPipeline:
+class PhotoimagePipeline:
     def __init__(self):
         self.url = set()
 
@@ -46,12 +46,14 @@ class MongodbPipeline:
 
 
 class PhotospiderPipeline(ImagesPipeline):
+    # def process_item(self, item, spider):
+    #     pass
     def get_media_requests(self, item, info):
         url = item['image_url']
         yield scrapy.Request(url, meta={'item': item})
 
     def file_path(self, request, response=None, info=None):
         title = request.meta['item']['title']
-        file_path = u'{0}/{1}.jpg'.format(IMAGE_PATH, title)
+        file_path = u'{0}/{1}.jpg'.format(IMAGES_STORE, title)
         return file_path
 
