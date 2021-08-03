@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c5fc39f-5edb-430e-b372-b41ea6d7d3e6" name="更改" comment="items.py&#10;pipelines.py&#10;scrapy.cfg&#10;settings.py&#10;middlewares.py&#10;weibo.py" />
+    <list default="true" id="1c5fc39f-5edb-430e-b372-b41ea6d7d3e6" name="更改" comment="items.py&#10;pipelines.py&#10;scrapy.cfg&#10;settings.py&#10;middlewares.py&#10;weibo.py">
+      <change beforePath="$PROJECT_DIR$/chaojiying_Python" beforeDir="false" afterPath="$PROJECT_DIR$/chaojiying_Python" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +40,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/chaojiying_Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.正则表达式" />
   </component>
   <component name="RunManager">
